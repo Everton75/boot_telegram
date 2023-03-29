@@ -1,0 +1,33 @@
+cria o bot no telegran
+------------------------------
+bot.py
+----------------------------
+
+import telebot
+from api_response_chat import *
+
+API_KEY= '6968493054 :AAEUhOyEEU2ZUB011zÃ8-fROatKAv2Dbv9U'
+
+bot = telebot. TeleBot (API_KEY)
+det response(message):
+bot . reply_to (mess
+bot. polling()
+
+--------------------------
+acessar o chat gpt
+---------------------------
+apy_response_chat.py
+-------------------------------
+import openai
+
+def generate_text(prompt):
+	completions openai .Completion.create(
+	engine ' text-davinci-002,
+	prompt=prompt,
+	max_tokens=2048,
+	n=1,
+	stop=None ,
+	temperature=0.5,
+	api _key= 'sk-tkuGY41 BB lbkF"d1')
+	message= completions.choices[0].text
+	return message.strip()
